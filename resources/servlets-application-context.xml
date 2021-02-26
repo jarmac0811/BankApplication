@@ -6,53 +6,53 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	<context:annotation-config />
 
-	<bean id="bankDao" class="main.java.com.luxoft.bankapp.dao.BankDAOImpl">
+	<bean id="bankDao" class="com.myapp.bankapp.dao.BankDAOImpl">
 		<property name="bankCommander" ref="bankCommander">
 		</property>
 	</bean>
-	<bean id="clientDao" class="main.java.com.luxoft.bankapp.dao.ClientDAOImpl">
+	<bean id="clientDao" class="com.myapp.bankapp.dao.ClientDAOImpl">
 	</bean>
 
-	<bean id="bankService" class="main.java.com.luxoft.bankapp.service.BankServiceImpl"
+	<bean id="bankService" class="com.myapp.bankapp.service.BankServiceImpl"
 		autowire="byType">
 		<property name="bankDao" ref="bankDao">
 		</property>
 		<property name="clientDao" ref="clientDao">
 		</property>
 	</bean>
-	<bean id="bankCommander" class="main.java.com.luxoft.bankapp.service.BankCommander"
+	<bean id="bankCommander" class="com.myapp.bankapp.service.BankCommander"
 		scope="singleton">
 		<property name="commands">
 			<map>
 				<entry key="1">
-					<bean class="main.java.com.luxoft.bankapp.commands.AddClientCommand"
+					<bean class="com.myapp.bankapp.commands.AddClientCommand"
 						autowire="byType" />
 				</entry>
 				<entry key="2">
-					<bean class="main.java.com.luxoft.bankapp.commands.FindClientCommand" />
+					<bean class="com.myapp.bankapp.commands.FindClientCommand" />
 				</entry>
 				<entry key="3">
-					<bean class="main.java.com.luxoft.bankapp.commands.GetAccountsCommand"
+					<bean class="com.myapp.bankapp.commands.GetAccountsCommand"
 						autowire="byType" />
 				</entry>
 				<entry key="4">
-					<bean class="main.java.com.luxoft.bankapp.commands.DepositCommand"
+					<bean class="com.myapp.bankapp.commands.DepositCommand"
 						autowire="byType" />
 				</entry>
 				<entry key="5">
-					<bean class="main.java.com.luxoft.bankapp.commands.WithdrawCommand"
+					<bean class="com.myapp.bankapp.commands.WithdrawCommand"
 						autowire="byType" />
 				</entry>
 				<entry key="6">
-					<bean class="main.java.com.luxoft.bankapp.commands.TransferCommand"
+					<bean class="com.myapp.bankapp.commands.TransferCommand"
 						autowire="byType" />
 				</entry>
 				<entry key="7">
-					<bean class="main.java.com.luxoft.bankapp.commands.DBReportCommander"
+					<bean class="com.myapp.bankapp.commands.DBReportCommander"
 						autowire="byType" />
 				</entry>
 				<entry key="8">
-					<bean class="main.java.com.luxoft.bankapp.commands.ExitCommand"
+					<bean class="com.myapp.bankapp.commands.ExitCommand"
 						autowire="byType" />
 				</entry>
 			</map>

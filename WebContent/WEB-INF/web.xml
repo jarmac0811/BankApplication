@@ -6,11 +6,11 @@
   </welcome-file-list>
   <servlet>
     <servlet-name>WelcomeServlet</servlet-name>
-    <servlet-class>main.java.com.luxoft.bankapp.servlets.WelcomeServlet</servlet-class>
+    <servlet-class>com.myapp.bankapp.servlets.WelcomeServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>main.java.com.luxoft.bankapp.servlets.LoginServlet</servlet-class>
+    <servlet-class>com.myapp.bankapp.servlets.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>WelcomeServlet</servlet-name>
@@ -22,7 +22,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>SessionAmountServlet</servlet-name>
-    <servlet-class>main.java.com.luxoft.bankapp.servlets.SessionAmountServlet</servlet-class>
+    <servlet-class>com.myapp.bankapp.servlets.SessionAmountServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>SessionAmountServlet</servlet-name>
@@ -30,7 +30,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>BalanceServlet</servlet-name>
-    <servlet-class>main.java.com.luxoft.bankapp.servlets.BalanceServlet</servlet-class>
+    <servlet-class>com.myapp.bankapp.servlets.BalanceServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>BalanceServlet</servlet-name>
@@ -38,7 +38,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>WithdrawServlet</servlet-name>
-    <servlet-class>main.java.com.luxoft.bankapp.servlets.WithdrawServlet</servlet-class>
+    <servlet-class>com.myapp.bankapp.servlets.WithdrawServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>WithdrawServlet</servlet-name>
@@ -46,7 +46,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>LogoutServlet</servlet-name>
-    <servlet-class>main.java.com.luxoft.bankapp.servlets.LogoutServlet</servlet-class>
+    <servlet-class>com.myapp.bankapp.servlets.LogoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LogoutServlet</servlet-name>
@@ -54,7 +54,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>FindClientsServlet</servlet-name>
-    <servlet-class>main.java.com.luxoft.bankapp.servlets.FindClientsServlet</servlet-class>
+    <servlet-class>com.myapp.bankapp.servlets.FindClientsServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>FindClientsServlet</servlet-name>
@@ -62,7 +62,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>GetClientServlet</servlet-name>
-    <servlet-class>main.java.com.luxoft.bankapp.servlets.GetClientServlet</servlet-class>
+    <servlet-class>com.myapp.bankapp.servlets.GetClientServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>GetClientServlet</servlet-name>
@@ -70,7 +70,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>SaveClientServlet</servlet-name>
-    <servlet-class>main.java.com.luxoft.bankapp.servlets.SaveClientServlet</servlet-class>
+    <servlet-class>com.myapp.bankapp.servlets.SaveClientServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>SaveClientServlet</servlet-name>
@@ -78,7 +78,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>DepositServlet</servlet-name>
-    <servlet-class>main.java.com.luxoft.bankapp.servlets.DepositServlet</servlet-class>
+    <servlet-class>com.myapp.bankapp.servlets.DepositServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>DepositServlet</servlet-name>
@@ -86,7 +86,7 @@
   </servlet-mapping>
   <filter>
     <filter-name>CheckLogged</filter-name>
-    <filter-class>main.java.com.luxoft.bankapp.servlets.CheckLoggedFilter</filter-class>
+    <filter-class>com.myapp.bankapp.servlets.CheckLoggedFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>CheckLogged</filter-name>
@@ -94,10 +94,10 @@
     <dispatcher>REQUEST</dispatcher>
   </filter-mapping>
   <listener>
-    <listener-class>main.java.com.luxoft.bankapp.servlets.SessionListener</listener-class>
+    <listener-class>com.myapp.bankapp.servlets.SessionListener</listener-class>
   </listener>
   <listener>
-        <listener-class>main.java.com.luxoft.bankapp.servlets.Listener</listener-class>
+        <listener-class>com.myapp.bankapp.servlets.Listener</listener-class>
     </listener>
     <context-param>
     <param-name>contextConfigLocation</param-name>
